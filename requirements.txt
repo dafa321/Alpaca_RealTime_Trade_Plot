@@ -1,0 +1,5 @@
+matplotlib==3.5.1
+numpy
+python_dateutil==2.8.1
+tzlocal==2.1
+websockets==10.4
