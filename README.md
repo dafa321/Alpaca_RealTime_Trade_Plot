@@ -60,7 +60,7 @@ Display the streaming data (trade price and volume) for a specific stock symbol 
 python ftrades.py --symbol boil
 ```
 
-![Example Ftrdes_Plot](Figure_2.png)
+![Example ftrades_plot](Figure_2.png)
 
 ## Disclaimer
 This program does not provide investment advice. It simply streams trade data from Alpaca's API. Please invest responsibly.
