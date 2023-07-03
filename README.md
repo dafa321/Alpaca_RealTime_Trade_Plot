@@ -22,9 +22,11 @@ Please ensure that these libraries are installed in your Python environment. You
 
 ```
 pip install argparse asyncio websockets json matplotlib dateutil tzlocal os
+```
 
 or 
 
+```
 pip install -r requirements.txt
 ```
 ## Usage
@@ -47,6 +49,10 @@ These must be set in your environment variables prior to running the program.
 ## Features
 Stream real-time trades from Alpaca
 Display the streaming data (trade price and volume) for a specific stock symbol in real time.
+
+## Example Trades plot:
+
+![Example Plot](Figure_1.png)
 
 ## Disclaimer
 This program does not provide investment advice. It simply streams trade data from Alpaca's API. Please invest responsibly.
