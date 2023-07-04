@@ -40,7 +40,7 @@ or try this version:
 python fetch_historical_trades_plot_v4.py --symbol TQQQ
 ```
 
-Replace AAPL with the stock symbol you want to stream.
+Replace AAPL or TQQQ with the stock symbol you want to stream.
 
 ## Environment Variables
 
