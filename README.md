@@ -34,6 +34,11 @@ pip install -r requirements.txt
 ```
 python alpaca_realtime_trades.py --symbol AAPL
 ```
+or try this version:
+
+```
+python fetch_historical_trades_plot_v4.py --symbol TQQQ
+```
 
 Replace AAPL with the stock symbol you want to stream.
 
