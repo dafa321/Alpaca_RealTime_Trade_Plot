@@ -8,6 +8,7 @@ from tzlocal import get_localzone
 import matplotlib.pyplot as plt
 import matplotlib.dates as md
 import numpy as np
+import pandas_market_calendars as mcal
 
 
 class HistoricalTradePlotter:
@@ -74,8 +75,10 @@ class HistoricalTradePlotter:
 
     def fetch_and_plot_trades(self):
         """Fetches historical trades data and plots the data."""
-        today = date.today().isoformat()
-        url = f"{self.BASE_URL}/{self.symbol}/trades?start={today}&limit={self.limit}"
+        nyse = mcal.get_calendar('NYSE')
+        last_trading_day = nyse.schedule(start_date='2020-01-01', end_date=pd.Timestamp.today())['market_close'].max().date()
+        print(f'Last trading day: {last_trading_day}')
+        url = f"{self.BASE_URL}/{self.symbol}/trades?start={last_trading_day}&limit={self.limit}"
         trades = []
         next_page_token = None
 
